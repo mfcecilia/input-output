@@ -1,0 +1,60 @@
+input/output
+
+input scanner
+
+types of scanners
+(about 4)
+
+scanner methods
+(about 8)
+
+tricky scanner stuff
+scanner.next();
+this doesn't take off new line character
+scanner.nextLine();
+takes off new line character
+
+scanner delimiters
+scanner.useDelimiter(","); 
+scans until it his a comma, then prints everything up until there. 
+good for comma separated lists.
+
+Printf
+let's you print data in a template
+system.out.printf("%d %.2f", num1, float1);
+%d = integer
+%s = 
+%f = floats
+%.2f lets you round to 2 decimal places
+
+Strings
+
+strings are immutable - once it's created, it can't be changed. you have to construct a new string. 
+
+problem:
+create a method called aLotOfAs, that takes in a number N, and returns a string with N "a"s. For example aLotOfAs...
+
+string concatination
+
+big O (N)
+run code and N get's things added to it 
+
+solution:
+big O(N^2)
+big o n squared
+
+StringBuilder class
+
+string vs string builder
+
+fixed solution:
+public String aLotOfAs(int N) {
+StringBuilder temp = new StringBuilder();
+for(int i = 0; i<N; i++) {
+temp.append("a");
+}
+return temp.toString();
+}
+...
+
+*there's more modification freedom with C because of the char primitive data type. so you can make a char array*
